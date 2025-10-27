@@ -170,6 +170,10 @@ components:
           type: array
           minItems: 1
           items: { $ref: '#/components/schemas/Act' }
+        montage:
+          description: Optional cross-scene montage relations at the score level.
+          type: array
+          items: { $ref: '#/components/schemas/MontageRelation' }
       required: [metadata, acts]
       examples:
         - metadata:
@@ -227,32 +231,47 @@ components:
         tempo: { $ref: '#/components/schemas/Tempo' }
         register: { $ref: '#/components/schemas/Register' }
         anchor: { type: string, description: 'Context anchor (e.g., app, stage, affect, narrative, perception, session)' }
+        sourceFile: { type: string, description: 'Original filename if imported from textual DSL' }
+        originalDsl: { type: string, description: 'Original textual DSL for round-trip preservation' }
+        symbolsPreserved: { type: boolean, default: false, description: 'Whether original notation symbols are preserved in symbols blocks' }
       required: [title, version, date, register]
 
     Act:
       type: object
       additionalProperties: false
       properties:
+        id: { type: string }
         title: { type: string }
+        rhythm: { $ref: '#/components/schemas/RhythmPattern' }
         scenes:
           type: array
           minItems: 1
           items: { $ref: '#/components/schemas/Scene' }
+        montage:
+          description: Optional montage relations within this act.
+          type: array
+          items: { $ref: '#/components/schemas/MontageRelation' }
       required: [title, scenes]
 
     Scene:
       type: object
       additionalProperties: false
       properties:
+        id: { type: string }
         title: { type: string }
         camera:
           $ref: '#/components/schemas/CameraCue'
+        rhythm: { $ref: '#/components/schemas/RhythmPattern' }
         frames:
           type: array
           minItems: 1
           items: { $ref: '#/components/schemas/Frame' }
         curtain:
           $ref: '#/components/schemas/CurtainType'
+        transitions:
+          description: Transitions linking frames within the scene.
+          type: array
+          items: { $ref: '#/components/schemas/Transition' }
       required: [title, frames]
 
     Frame:
@@ -275,6 +294,19 @@ components:
         meta:
           type: array
           items: { $ref: '#/components/schemas/MetaCommand' }
+        register: { $ref: '#/components/schemas/Register' }
+        tags:
+          type: array
+          items: { type: string }
+        annotations:
+          type: array
+          items: { $ref: '#/components/schemas/Annotation' }
+        symbols:
+          $ref: '#/components/schemas/NotationSymbols'
+        transitions:
+          description: Optional per-frame transitions to other frames.
+          type: array
+          items: { $ref: '#/components/schemas/Transition' }
       required: [id, gesture]
 
     Layer:
@@ -286,6 +318,7 @@ components:
           type: array
           minItems: 1
           items: { $ref: '#/components/schemas/Gesture' }
+        register: { $ref: '#/components/schemas/Register' }
       required: [name, gestures]
 
     Gesture:
@@ -301,9 +334,20 @@ components:
         durationSeconds:
           type: number
           minimum: 0
+        timing:
+          $ref: '#/components/schemas/Timing'
         operators:
           type: array
           items: { $ref: '#/components/schemas/OperatorInstruction' }
+        register: { $ref: '#/components/schemas/Register' }
+        tags:
+          type: array
+          items: { type: string }
+        annotations:
+          type: array
+          items: { $ref: '#/components/schemas/Annotation' }
+        symbols:
+          $ref: '#/components/schemas/NotationSymbols'
       required: [tempo, light]
 
     OperatorInstruction:
@@ -318,6 +362,13 @@ components:
           type: number
           description: Scalar like @2x or 0.5 for softening
         notes: { type: string }
+        timing:
+          $ref: '#/components/schemas/Timing'
+        scope:
+          $ref: '#/components/schemas/Scope'
+        order:
+          type: integer
+          minimum: 0
       required: [operator]
 
     CameraCue:
@@ -337,6 +388,10 @@ components:
           enum: [rack, pull, lock]
         move:
           $ref: '#/components/schemas/CameraMove'
+        keyframes:
+          description: Camera keyframes over the frame timeline (0..1).
+          type: array
+          items: { $ref: '#/components/schemas/CameraKeyframe' }
 
     MetaCommand:
       type: object
@@ -411,3 +466,114 @@ components:
       type: string
       enum: [technical, expressive, psychological]
 
+    # New schemas for full parity with the Teatro DSL
+    Timing:
+      type: object
+      additionalProperties: false
+      properties:
+        durationSeconds: { type: number, minimum: 0 }
+        delaySeconds: { type: number, minimum: 0 }
+        loopCount: { type: integer, minimum: 0 }
+        easing: { $ref: '#/components/schemas/Easing' }
+      description: Timing controls for gestures, operators, and transitions.
+
+    Easing:
+      oneOf:
+        - type: string
+          enum: [linear, ease_in, ease_out, ease_in_out]
+        - type: object
+          additionalProperties: false
+          properties:
+            type:
+              type: string
+              enum: [spring]
+            stiffness: { type: number, minimum: 0 }
+            damping: { type: number, minimum: 0 }
+            mass: { type: number, minimum: 0 }
+          required: [type]
+      description: Easing curve; either a preset or spring parameters.
+
+    RhythmPattern:
+      type: object
+      additionalProperties: false
+      properties:
+        pattern:
+          type: string
+          description: 'e.g., "1-2-4" or textual label like "contrast|mood"'
+        tokens:
+          type: array
+          items: { type: number }
+
+    Transition:
+      type: object
+      additionalProperties: false
+      properties:
+        fromFrameId: { type: string }
+        toFrameId: { type: string }
+        type: { $ref: '#/components/schemas/TransitionType' }
+        cut: { $ref: '#/components/schemas/CutType' }
+        timing: { $ref: '#/components/schemas/Timing' }
+        notes: { type: string }
+      required: [type]
+
+    MontageRelation:
+      type: object
+      additionalProperties: false
+      properties:
+        fromSceneId: { type: string }
+        toSceneId: { type: string }
+        relation:
+          type: string
+          enum: [contrast, echo, cause, memory]
+        cut: { $ref: '#/components/schemas/CutType' }
+        rhythm: { $ref: '#/components/schemas/RhythmPattern' }
+        notes: { type: string }
+      required: [fromSceneId, toSceneId, relation]
+
+    CameraKeyframe:
+      type: object
+      additionalProperties: false
+      properties:
+        t:
+          type: number
+          minimum: 0
+          maximum: 1
+          description: Normalized time in [0,1] across the frame duration.
+        framing: { $ref: '#/components/schemas/CameraFraming' }
+        lensFNumber: { type: number, minimum: 1.2, maximum: 22 }
+        focusMode: { type: string, enum: [rack, pull, lock] }
+        move: { $ref: '#/components/schemas/CameraMove' }
+
+    Annotation:
+      type: object
+      additionalProperties: false
+      properties:
+        label: { type: string }
+        value: {}
+        notes: { type: string }
+
+    Scope:
+      type: object
+      additionalProperties: false
+      properties:
+        regionName: { type: string }
+        selector: { type: string, description: 'Optional selector for UI region (implementation-defined)' }
+        area:
+          type: object
+          additionalProperties: false
+          properties:
+            x: { type: number }
+            y: { type: number }
+            width: { type: number }
+            height: { type: number }
+
+    NotationSymbols:
+      type: object
+      additionalProperties: false
+      properties:
+        tempoSymbol: { type: string, description: 'e.g., ♩, ♪, ♬, 𝄐' }
+        lightSymbol: { type: string, description: 'e.g., ☀, ☁, 🌒, 🌑' }
+        energySymbol: { type: string, description: 'e.g., ∧, ∨, S, ~, —' }
+        operatorSymbols:
+          type: array
+          items: { type: string, description: 'e.g., ↑, ↓, ¬, ⊹, ∿, ⧉, ◌, ↔, ⊕, ⊖, ⊛' }
