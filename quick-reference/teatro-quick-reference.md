@@ -5,7 +5,7 @@
 - **Light:** ☀ clear · ☁ diffuse · 🌒 partial · 🌑 dark
 - **Motion:** drift · pulse · collapse · unfold
 - **Energy:** ∧ rise · ∨ fall · S delay→resolve · ~ oscillate · — steady
-- **Operators:** ↑ amplify · ↓ soften · ¬ invert · ⊹ dissolve · ∿ echo · ⧉ sharpen · ◌ blur · ↔ mirror · ⊕ merge · ⊖ split · ⊛ hybrid
+- **Operators:** ↑ amplify · ↓ soften · ¬ invert · ⊹ dissolve · ∿ echo · ⧉ sharpen · ◌ blur · ↔ mirror · ⊕ merge · ⊖ split · ⊛ hybrid — see Part 10: Expressive Operators (parts/part-10.md)
 
 ## 2 · Scene Syntax (Minimal)
 ```
@@ -15,6 +15,7 @@
 ↑ light ⊹ motion
 Curtain — ◎
 ```
+See Part 09: Teatro Score Format (parts/part-09.md)
 
 ## 3 · Cinematic Layer
 - Camera: WS/MS/CU/POV/OTS
@@ -22,8 +23,13 @@ Curtain — ◎
 - Moves: pan · tilt · zoom · dolly · orbit
 - Cuts: match · cross-fade · jump · dissolve
 
+See Part 13: Semantic Cinematography (parts/part-13.md) and Part 14: Narrative Montage (parts/part-14.md)
+
 ## 4 · Dialogue & Commands
 focus on stage · rehearse variant · freeze frame · shift register (technical/expressive) · compress/expand timeline · wipe stage
 
 ## 5 · Montage & Narrative
 Scene A ⇄ Scene B (contrast/echo/cause/memory); ⏪/⏩; ∥; ∑ Δ ⟳ ∂; rhythm [1-2-4 | contrast | mood]
+
+
+[Back to Summary](../SUMMARY.md) · [Home](../README.md)
