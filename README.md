@@ -13,6 +13,7 @@ This repository packages the full **Teatro prompt language** we developed to con
 - `examples/` — Example Teatro score(s) to start from.
 - `GLOSSARY.md` — Core terms and symbols at a glance.
 - `TROUBLESHOOTING.md` — Common pitfalls and quick remedies.
+- `CODE-POINTERS.md` — Curated Apple docs and APIs.
 - `SUMMARY.md` — Table of contents with links.
 - This `README.md` — How to use the material.
 

@@ -5,6 +5,7 @@
 ## Contents
 - [Overview](#overview)
 - [Key Ideas](#key-ideas)
+- [Implementation Notes](#implementation-notes)
 - [Try This](#try-this)
 - [Navigation](#navigation)
 
@@ -22,6 +23,13 @@
 - Track deltas and resonance to guide learning and iteration.
 
 Examples: [Live Direction](../examples/Live-Direction.score.teatro) (freeze/restore), [Contrast Montage](../examples/Contrast-Montage.score.teatro) (memory), [Still Reflection](../examples/Still-Reflection.score.teatro) (✶).
+
+## Implementation Notes
+- What to record: frames (F1…Fn), gestures, parameters, commentary, and metrics. Prefer a compact JSON alongside `.teatro` for diff‑friendly review.
+- Naming: version with intent and date (e.g., `search-focus_v3_2025-10-27`). Use tags for anchors (tempo/light/camera/montage) to filter later.
+- Storage: simple file‑based logs are fine for local work; rotate by week. For sensitive data, store only descriptors, not actual content.
+- Compare/Merge: use structural diffs on gestures first, then evaluate expressive deltas (tempo/light). Keep raw takes; commit chosen cuts as a new score.
+- Playback: support speed (`@speed`), loop (`↺`), and A/B toggles. Annotate resonance moments to inform later synthesis.
 
 ## Try This
 - Record two variants; replay and compare to identify deltas and resonance.

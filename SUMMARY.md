@@ -5,6 +5,7 @@
 - [Quick Reference](quick-reference/teatro-quick-reference.md)
 - [Examples](examples/README.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
+- [Code Pointers](CODE-POINTERS.md)
 - Parts (I–XVI)
   - [Part I — macOS GUI Lingo 101 (Prompts only) · ~3 min](parts/part-01.md)
   - [Part II — Advanced GUI & System Interaction Lingo · ~4 min](parts/part-02.md)
