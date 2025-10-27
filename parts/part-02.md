@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -19,6 +20,12 @@
 - Multiwindow: “Describe strategies to share state across scenes.”
 - Menu bar: “Explain lifecycle of a MenuBarExtra app (dockless).”
 - Testing: “Outline UI tests for menu commands and windows.”
+
+## Key Ideas
+- Cover advanced macOS domains beyond basic UI (gestures, a11y, sandbox).
+- Contrast implicit vs explicit animations and responder chain roles.
+- Understand sandbox constraints for files and security-scoped bookmarks.
+- Manage multiwindow state sharing and menu bar app lifecycles.
 ## Navigation
 
 ---

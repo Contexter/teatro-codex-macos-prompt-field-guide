@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Registers:** `T:` technical · `E:` expressive · `P:` psychological
 
 **Cues:** `@enter(name)` · `@exit(name)` · `@light(level)` · `@tempo(value)` · `@mood(tag)`
+
+## Key Ideas
+- A compact notation for local workshops and quick iteration.
+- Registers separate technical, expressive, and psychological layers.
+- Cues provide a shared shorthand for directing changes.
 
 **Versioning:** v1/v2; ↓ return; ⟲ merge motifs. Keep compact workshop notes per act.
 ## Navigation

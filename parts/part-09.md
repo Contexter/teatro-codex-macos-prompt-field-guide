@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -23,6 +24,11 @@ F1 :: ♩ ☁ drift— @4s
 **Transitions:** `>` forward · `<` recall · `⇄` dialogue · `↺` loop · `⇢/⇠` crossfade/cut.
 
 **Curtain:** `◎` baseline · `✶` memory · `⧈` unresolved.
+
+## Key Ideas
+- Standardize scenes as Frames (F1…Fn) with concise gestures.
+- Use layers and transitions to compose simultaneous and sequential action.
+- Encode memory and resolution with recognizable curtain symbols.
 ## Navigation
 
 ---

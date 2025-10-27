@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Example](#example)
 - [Navigation](#navigation)
 
@@ -18,6 +19,11 @@
 **Context anchors:** App (technical), Stage (visual), Affect (psychological).
 
 **Turn-taking:** Describe → Perform → Evaluate (keep/invert/amplify) → Iterate → Freeze/Branch.
+## Key Ideas
+- Treat prompting as dialogue with roles and memory.
+- Use meta-commands to control attention, tempo, and state.
+- Iterate via keep/invert/amplify decisions and freeze/branch.
+
 ## Example
 See example: “Live Direction” (../examples/Live-Direction.score.teatro)
 

@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Syntax:** `action ⟨operator⟩ target @modifier` e.g., `↑ light @2x`
 
 **Temporal:** `⇢ (delay)`, `⇠ (anticipate)`, `↺ (loop n)`, `⇡/⇣ (accel/decel)`
+
+## Key Ideas
+- Operators modulate meaning: amplify/soften/invert/merge/split, etc.
+- Apply operators to light/motion/tempo to explore variants quickly.
+- Temporal operators control timing, repetition, and pacing curves.
 
 **Spatial:** `⇤ compress` · `⇥ expand` · diagonals ↗ ↘ ↖ ↙
 

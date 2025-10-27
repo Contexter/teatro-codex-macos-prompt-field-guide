@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Light:** ☀ clear · ☁ diffuse · 🌒 partial · 🌑 blackout; gradients with →
 
 **Motion verbs:** drift · pulse · pivot · collapse/unfold · breathe
+
+## Key Ideas
+- Core expressive grammar: tempo, light, motion, energy.
+- Combine verbs and curves to shape perceived effort and mood.
+- Use simple symbols to quickly direct dynamic behavior.
 
 **Energy curves:** ∧ buildup · ∨ release · S delay→resolution · ~ oscillate · — steady
 

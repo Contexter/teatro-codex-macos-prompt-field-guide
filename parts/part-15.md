@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -21,6 +22,11 @@
 commentary: The interface exhales into focus.
 Curtain — ◎
 ```
+ 
+## Key Ideas
+- Three planes unify: structural, expressive, cinematic.
+- Five anchors provide a compact mental model for direction.
+- The minimal stack expresses a complete scene with few gestures.
 ## Navigation
 
 ---

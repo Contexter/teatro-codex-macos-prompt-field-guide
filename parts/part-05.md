@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -16,6 +17,11 @@
 - `@State` ↔ actor’s inner mood; `@Binding` ↔ shared line of dialogue.
 - `CommandGroup` ↔ cue sheet; `withAnimation` ↔ stage cue for motion.
 - `NSHostingView` ↔ translator between stages.
+
+## Key Ideas
+- Map SwiftUI and AppKit primitives to theatrical concepts.
+- Use the metaphor to discuss structure and behavior succinctly.
+- Keep mappings practical; prefer precise one-to-one correspondences.
 ## Navigation
 
 ---

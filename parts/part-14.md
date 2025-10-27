@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Grammar:** `Scene A ⇄ Scene B` with `relation: contrast|echo|cause|memory`
 
 **Temporal:** ⏪ flashback · ⏩ flash-forward · ∥ parallel · ×t/÷t stretch/compress
+
+## Key Ideas
+- Construct narrative meaning across scenes using montage relations.
+- Choose cut types and rhythm to control audience inference.
+- Blend parallel timelines and time compression/expansion.
 
 **Operators:** ∑ accumulate · Δ shift · ⟳ recur · ∂ partial echo
 

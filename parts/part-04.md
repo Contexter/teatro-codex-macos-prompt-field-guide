@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -15,6 +16,11 @@
 - “Explain how focus behaves like a spotlight.”
 - “Reduce interface to essential gestures, not decoration.”
 - “Describe psychological lighting: what reveals vs hides.”
+
+## Key Ideas
+- Describe interfaces as staged performances (entrances/exits, cues).
+- Focus and light as spotlights; reduce to essential gestures.
+- Prefer expressive minimalism over decorative complexity.
 ## Navigation
 
 ---

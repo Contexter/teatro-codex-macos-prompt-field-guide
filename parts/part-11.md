@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Example](#example)
 - [Navigation](#navigation)
 
@@ -14,6 +15,11 @@
 **Tempo calls:** “Hold ♩” · “Push → ♬” · “Drop → 𝄐” · “Snap Cut”
 
 **Ensemble:** Unison · Counterpoint · Canon(n) · Solo
+
+## Key Ideas
+- Direct the system like an ensemble with tempo calls and cues.
+- Balance unison vs counterpoint; coordinate parts across layers.
+- Use critique/commit cycles to converge in real time.
 
 **Emergency:** Stop Scene · Abort Cue · Silence stage (🌑, 𝄐) · Reset baseline
 ## Example

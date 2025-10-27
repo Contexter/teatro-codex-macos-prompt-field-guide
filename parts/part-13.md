@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Lens:** ƒ/1.4 (shallow) → ƒ/11 (deep); rack/pull/lock focus
 
 **Moves:** pan · tilt · zoom · dolly · orbit
+
+## Key Ideas
+- Use framing, lens, and camera movement to direct perception.
+- Rack/pull focus as semantic attention shifts, not just visuals.
+- Choose moves and cuts to convey intent with minimal motion.
 
 **Cuts:** straight · match · cross-fade · jump · dissolve; angles: top/side/back/under
 

@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -22,6 +23,12 @@
 - “Outline how to present NSOpenPanel in a sandboxed SwiftUI app.”
 
 **Use this first:** frame conversations with Intent → Structure → Behavior → Context.
+
+## Key Ideas
+- Speak in concrete, compiler-style prompts without code.
+- Structure prompts by Intent → Structure → Behavior → Context.
+- Name macOS targets and constraints (version, sandbox, menus).
+- Favor native SwiftUI primitives and standard app scenes.
 ## Navigation
 
 ---

@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -17,6 +18,11 @@
 **Memory aids:** quick card · color categories · sensation mapping.
 
 **Integration loop:** Design → Code → Reflect → Adjust.
+
+## Key Ideas
+- Learn by spiraling vocabulary → syntax → dialogue → composition.
+- Short daily practice builds fluency; weeks provide thematic focus.
+- Use memory aids and reflection to internalize the language.
 ## Navigation
 
 ---

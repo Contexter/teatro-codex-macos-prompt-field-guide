@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -17,6 +18,11 @@
 - Space: “Describe balance between sidebar and content (visual weight).”
 - Material: “Explain translucency as contextual depth.”
 - Cognition: “List anchoring cues that reduce anxiety.”
+
+## Key Ideas
+- Treat UX as meaning over time (tone, arc, rhythm).
+- Use spatial composition and material behavior to guide attention.
+- Tie prompts to affect and cognition, not just layout.
 ## Navigation
 
 ---

@@ -4,6 +4,7 @@
 
 ## Contents
 - [Overview](#overview)
+- [Key Ideas](#key-ideas)
 - [Navigation](#navigation)
 
 ## Overview
@@ -13,6 +14,11 @@
 **Playback:** `replay("Act I", @speed=1.0)` · `compare("v2","v3")` · `merge("v2","v3")`
 
 **Metrics:** Δ Tempo · Δ Light · Δ Mood · Resonance Index
+
+## Key Ideas
+- Record artifacts in modes (chronicle/condensed/analytic/affective).
+- Replay, compare, and merge to evaluate design trajectories.
+- Track deltas and resonance to guide learning and iteration.
 
 **Archiving:** `archive("Name", tags=[…], format=.teatro)`
 ## Navigation
