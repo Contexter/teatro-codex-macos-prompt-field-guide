@@ -1,0 +1,22 @@
+# Teatro Score: “Still Reflection”
+@version 1.0
+@date 2025-10-27
+@palette calm
+@tempo ♩
+@register expressive
+@anchor affect
+
+ACT I — “Awakening”
+Scene 1 — “First Light”
+F1 :: ♩ ☁ drift— @4s
+    mood: calm
+    commentary: the window breathes open
+F2 :: ♩ ☀ pulseS @2s
+    commentary: attention focuses without rush
+Curtain — ◎
+
+ACT II — “Resolution”
+Scene 1 — “Return”
+F3 :: ♩ 🌒 breathe∨ @5s
+    commentary: fade to internal stillness
+Curtain — ✶
