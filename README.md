@@ -15,6 +15,7 @@ This repository packages the full **Teatro prompt language** we developed to con
 - `TROUBLESHOOTING.md` — Common pitfalls and quick remedies.
 - `CODE-POINTERS.md` — Curated Apple docs and APIs.
 - `openapi.yaml` — One-file OpenAPI spec for the Teatro language (schemas + ops).
+  - Browse: `swagger.html` (Swagger UI)
 - `SUMMARY.md` — Table of contents with links.
 - This `README.md` — How to use the material.
 

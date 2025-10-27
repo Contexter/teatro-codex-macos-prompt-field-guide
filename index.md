@@ -11,7 +11,7 @@ Welcome. This site hosts the Teatro language for directing Codex to design macOS
 - Quick access: [Teatro Quick‑Reference](quick-reference/teatro-quick-reference.md)
 - Explore: [Summary / Table of Contents](SUMMARY.md)
 - Reference: [Glossary](GLOSSARY.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Code Pointers](CODE-POINTERS.md)
+- API: [OpenAPI Spec](openapi.yaml) · [Swagger UI](swagger.html)
 - Examples: [Examples index](examples/README.md)
 
 If you’re browsing the repo on GitHub, see the README for orientation: [README](README.md)
-

@@ -20,6 +20,9 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/TeatroScore'
+            examples:
+              richScore:
+                $ref: '#/components/examples/RichScore'
       responses:
         '200':
           description: Validation result
@@ -465,6 +468,127 @@ components:
     Register:
       type: string
       enum: [technical, expressive, psychological]
+
+  examples:
+    RichScore:
+      summary: Rich example with transitions, montage, camera keyframes, and operators
+      value:
+        metadata:
+          title: Focus Reveal
+          version: '1.0'
+          date: '2025-10-27'
+          palette: neutral
+          tempo: steady
+          register: expressive
+          anchor: perception
+          sourceFile: Focus-Reveal.score.teatro
+          symbolsPreserved: true
+        acts:
+          - id: A1
+            title: Entry
+            rhythm:
+              pattern: '1-2-4'
+              tokens: [1,2,4]
+            scenes:
+              - id: S1
+                title: Orientation
+                camera:
+                  path: [WS]
+                frames:
+                  - id: F1
+                    commentary: establish space, low contrast
+                    gesture:
+                      tempo: steady
+                      light: diffuse
+                      motion: [drift]
+                      energy: steady
+                      durationSeconds: 3
+                      timing:
+                        easing: linear
+                    symbols:
+                      tempoSymbol: '♩'
+                      lightSymbol: '☁'
+                      energySymbol: '—'
+                transitions:
+                  - fromFrameId: F1
+                    toFrameId: F2
+                    type: forward
+                    cut: cross_fade
+                    timing:
+                      durationSeconds: 0.4
+              - id: S2
+                title: Attention
+                camera:
+                  path: [WS, MS, CU]
+                  keyframes:
+                    - { t: 0.0, framing: WS, move: dolly }
+                    - { t: 0.6, framing: MS, move: dolly }
+                    - { t: 1.0, framing: CU, move: lock }
+                frames:
+                  - id: F2
+                    commentary: accelerate response, brighten foreground
+                    gesture:
+                      tempo: moderate
+                      light: clear
+                      motion: [pulse]
+                      energy: rise
+                      durationSeconds: 2
+                      timing:
+                        easing: ease_in
+                    operators:
+                      - operator: sharpen
+                        target: light
+                        factor: 1.5
+                        timing:
+                          delaySeconds: 0.2
+                        scope:
+                          regionName: focus-area
+                    annotations:
+                      - label: cue
+                        value: 'bring attention to primary CTA'
+                    symbols:
+                      tempoSymbol: '♪'
+                      lightSymbol: '☀'
+                      energySymbol: '∧'
+                transitions:
+                  - fromFrameId: F2
+                    toFrameId: F3
+                    type: forward
+                    cut: match
+                    timing:
+                      durationSeconds: 0.2
+              - id: S3
+                title: Engage
+                camera:
+                  path: [CU]
+                frames:
+                  - id: F3
+                    commentary: settle into detail, sharpen edges
+                    gesture:
+                      tempo: steady
+                      light: clear
+                      motion: []
+                      energy: steady
+                      durationSeconds: 2
+                    operators:
+                      - operator: amplify
+                        target: light
+                        factor: 1.2
+                      - operator: mirror
+                        target: motion
+                        notes: 'subtle UI echo on secondary panel'
+                curtain: baseline
+            montage:
+              - fromSceneId: S1
+                toSceneId: S2
+                relation: contrast
+                cut: cross_fade
+                rhythm:
+                  pattern: 'contrast'
+              - fromSceneId: S2
+                toSceneId: S3
+                relation: echo
+                cut: match
 
     # New schemas for full parity with the Teatro DSL
     Timing:
