@@ -73,3 +73,19 @@ teatro-codex-macos-prompt-field-guide/
 ## License
 
 This content is provided for your internal use. If you plan to publish, add your preferred license file at the repo root (e.g., MIT, Apache-2.0).
+
+---
+
+## Publishing
+
+GitHub Pages (simple, no build):
+- Already added: `_config.yml` with a minimal theme and `index.md` homepage.
+- Enable in GitHub → Settings → Pages:
+  - Source: “Deploy from a branch”
+  - Branch: `main` · Folder: `/` (root)
+- Your site URL becomes: `https://Contexter.github.io/teatro-codex-macos-prompt-field-guide/`
+
+Notes
+- The header includes quick links to Summary, Glossary, Troubleshooting, Code Pointers, Quick‑Reference, and Examples.
+- All existing Markdown files render as pages; links remain relative.
+- To customize the look, edit `_config.yml` (theme, header_pages) or add CSS via `assets`.

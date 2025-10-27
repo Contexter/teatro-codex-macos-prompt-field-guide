@@ -1,0 +1,13 @@
+title: Teatro Field Guide
+description: Codex macOS prompt language using Teatro semantics.
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+markdown: kramdown
+header_pages:
+  - SUMMARY.md
+  - GLOSSARY.md
+  - TROUBLESHOOTING.md
+  - CODE-POINTERS.md
+  - quick-reference/teatro-quick-reference.md
+  - examples/README.md
