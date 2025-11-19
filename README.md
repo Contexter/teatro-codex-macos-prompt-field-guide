@@ -1,8 +1,8 @@
-# Codex macOS Prompt Field Guide (Teatro Language)
+# Teatro Field Guide (Codex · FountainKit · Instruments)
 
 **Version:** 1.0 • **Date:** 2025-10-27
 
-This repository packages the full **Teatro prompt language** we developed to converse with Codex about **macOS GUI creation** — a bilingual system that bridges **SwiftUI technical terms** and **stage/cinematic semantics**.
+This repository packages the full **Teatro prompt language** we developed to converse with Codex about **GUI and instrument creation** — a bilingual system that bridges **platform‑level technical terms** (SwiftUI, SDL, FountainKit) and **stage/cinematic semantics**.
 
 ---
 
@@ -24,12 +24,13 @@ This repository packages the full **Teatro prompt language** we developed to con
 
 ## How to use
 
-1. Start with **[Part 15 – Integrative Summary](parts/part-15.md)** to see the whole map.
+1. Start with **[Part 15 – Integrative Summary](parts/part-15.md)** to see the whole map of the Teatro language.
 2. Keep **[Teatro Quick-Reference Card](quick-reference/teatro-quick-reference.md)** open while working.
 3. When exploring expressive design, read **[Part 8 – Stage Dynamics](parts/part-08.md)** and **[Part 10 – Expressive Operators](parts/part-10.md)**.
 4. When shaping narrative/flow, use **[Part 13 – Cinematography](parts/part-13.md)** and **[Part 14 – Montage](parts/part-14.md)**.
-5. To learn efficiently, follow **[Part 16 – Learnability Framework](parts/part-16.md)**.
-6. When in doubt about a symbol or term, check the **[Glossary](GLOSSARY.md)**.
+5. When you want to turn a Teatro scene into a **FountainKit instrument**, read **[Instruments & Pipelines (FountainKit)](parts/instruments-pipeline.md)** for the outside‑in story.
+6. To learn efficiently, follow **[Part 16 – Learnability Framework](parts/part-16.md)**.
+7. When in doubt about a symbol or term, check the **[Glossary](GLOSSARY.md)**.
 
 ---
 
