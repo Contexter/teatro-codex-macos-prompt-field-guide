@@ -23,3 +23,4 @@
   - [Part XIV — Narrative Montage & Cross-Scene Editing · ~4 min](parts/part-14.md)
   - [Part XV — Integrative Summary · ~3 min](parts/part-15.md)
   - [Part XVI — Learnability Framework · ~3 min](parts/part-16.md)
+  - [Instruments & Pipelines (FountainKit) · ~3 min](parts/instruments-pipeline.md)

@@ -11,6 +11,7 @@ This repository packages the full **Teatro prompt language** we developed to con
 - `parts/` — Sixteen chapters (1–16) as focused guides.
 - `quick-reference/` — A concise one-pager for daily use.
 - `examples/` — Example Teatro score(s) to start from.
+- `parts/instruments-pipeline.md` — How Teatro scenes become FountainKit instruments.
 - `GLOSSARY.md` — Core terms and symbols at a glance.
 - `TROUBLESHOOTING.md` — Common pitfalls and quick remedies.
 - `CODE-POINTERS.md` — Curated Apple docs and APIs.
@@ -39,6 +40,7 @@ This repository packages the full **Teatro prompt language** we developed to con
   - Compose: [Part 09 – Score Format](parts/part-09.md)
   - Daily use: [Quick-Reference](quick-reference/teatro-quick-reference.md)
   - Big picture: [Part 15 – Integrative Summary](parts/part-15.md)
+  - Instruments in practice: [Instruments & Pipelines (FountainKit)](parts/instruments-pipeline.md)
 
 - Expressive Track
   - Dynamics: [Part 08 – Stage Dynamics](parts/part-08.md)
