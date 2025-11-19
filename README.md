@@ -1,6 +1,6 @@
 # Teatro Field Guide (Codex · FountainKit · Instruments)
 
-**Version:** 1.0 • **Date:** 2025-10-27
+**Version:** 1.0 • **Date:** 2025-11-19
 
 This repository packages the full **Teatro prompt language** we developed to converse with Codex about **GUI and instrument creation** — a bilingual system that bridges **platform‑level technical terms** (SwiftUI, SDL, FountainKit) and **stage/cinematic semantics**.
 
